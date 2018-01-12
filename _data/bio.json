@@ -6,52 +6,52 @@
     "email": "ry.seymour@gmail.com",
     "phone": "808-333-4444",
     "website": "https://sourseymour.github.io",
-    "summary": "I am studying for a Masters of Arts in Game Design at American University with a planned graduation date of Spring, 2018.",
+    "summary": "Seeking opportunities to expand game design knowledge in schools and universities and collaborate on engaging, educational games.",
     "location": {
       "address": "",
-      "postalCode": "96822",
-      "city": "Washington DC",
+      "postalCode": "20814",
+      "city": "Bethesda",
       "countryCode": "USA",
-      "region": "Hawaii"
+      "region": "Maryland"
     },
     "profiles": [
       {
         "network": "github",
-        "username": "mmaluhia",
-        "url": "http://github.com/changeme"
+        "username": "sourseymour",
+        "url": "http://github.com/sourseymour"
       },
       {
         "network": "linkedin",
-        "username": "mollymaluhia",
-        "url": "http://linkedin.com/in/changeme"
+        "username": "ryan-seymour",
+        "url": "http://linkedin.com/in/ryan-seymour"
       },
       {
-        "network": "twitter",
-        "username": "mollymal",
-        "url": "http://twitter.com/changeme"
+       // "network": "twitter",
+        //"username": "mollymal",
+        //"url": "http://twitter.com/changeme"
       },
       {
-        "network": "instagram",
-        "username": "molly",
-        "url": "http://instagram.com/changeme"
+        //"network": "instagram",
+        //"username": "molly",
+        //"url": "http://instagram.com/changeme"
       }
     ]
   },
   "interests": [
     {
-      "name": "internet of things",
+      "name": "game design",
       "keywords": [
         "Arduino",
         "TI MSP430"
       ]
     },
     {
-      "name": "data mining",
+      "name": "augmented reality",
       "keywords": [
       ]
     },
     {
-      "name": "artificial intelligence",
+      "name": "virtual reality",
       "keywords": [
       ]
     }
@@ -61,12 +61,10 @@
       "name": "Languages and Frameworks",
       "level": "",
       "keywords": [
-        "C",
-        "C++",
-        "Java",
+        "C#",
+        "HTML5",
+        "CSS",
         "Javascript",
-        "Assembly",
-        "Common Lisp"
       ]
     },
     {
