@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Molly Maluhia",
-    "label": "Student",
-    "picture": "https://techfolios.github.io/template/images/molly.png",
-    "email": "molly@hawaii.edu",
+    "name": "Ryan Seymour",
+    "label": "Game Developer & E-Learning Coordinator",
+    "picture": "https://sourseymour.github.io/images/profilepic.png",
+    "email": "ry.seymour@gmail.com",
     "phone": "808-333-4444",
-    "website": "https://mmaluhia.github.io",
-    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2020.",
+    "website": "https://sourseymour.github.io",
+    "summary": "I am studying for a Masters of Arts in Game Design at American University with a planned graduation date of Spring, 2018.",
     "location": {
       "address": "",
       "postalCode": "96822",
