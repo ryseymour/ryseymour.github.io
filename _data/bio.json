@@ -41,8 +41,6 @@
     {
       "name": "game design",
       "keywords": [
-        "Arduino",
-        "TI MSP430"
       ]
     },
     {
@@ -99,8 +97,8 @@
       "endDate": "Present",
       "summary": "Provide support for and maintain the organization's Learning Management System",
       "highlights": [
-        "Maintain, update, and oversee official college newspaper website",
-        "Drive, design and build student-community projects for UH Manoa"
+        "Provide user support for the organization's Learning Management System to faculty and students.",
+        "Maintain LMS database functionality while providing support for server updates"
       ]
     },
     {
