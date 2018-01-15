@@ -25,16 +25,16 @@
         "username": "ryan-seymour",
         "url": "http://linkedin.com/in/ryan-seymour"
       },
-      //{
-       // "network": "twitter",
-        //"username": "mollymal",
-        //"url": "http://twitter.com/changeme"
-      //},
-     // {
-        //"network": "instagram",
-        //"username": "molly",
-        //"url": "http://instagram.com/changeme"
-     // }
+      {
+        "network": "twitter",
+        "username": "mollymal",
+        "url": "http://twitter.com/changeme"
+      },
+     {
+        "network": "instagram",
+        "username": "molly",
+        "url": "http://instagram.com/changeme"
+      }
     ]
   },
   "interests": [
