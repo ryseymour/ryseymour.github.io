@@ -71,20 +71,19 @@
       "name": "Toolsets/OS",
       "level": "",
       "keywords": [
-        "MacOS",
-        "Ubuntu",
+        "Unity",
+        "Blender",
         "Git/GitHub",
-        "g++",
-        "TI LaunchPad"
+        "Twine",
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Hawaii, Honolulu, HI",
-      "area": "Computer Science (expected Spring, 2018)",
-      "studyType": "B.S.",
-      "startDate": "2013-09-01",
+      "institution": "American University",
+      "area": "Game Design (expected Spring, 2018)",
+      "studyType": "M.A.",
+      "startDate": "2016-09-01",
       "endDate": "Present",
       "gpa": "",
       "courses": [
@@ -93,12 +92,12 @@
   ],
   "work": [
     {
-      "company": "UH Manoa Board of Publications",
-      "position": "Web Developer",
+      "company": "American University",
+      "position": "E-Learning Coordinator",
       "website": "",
-      "startDate": "2015-08-01",
+      "startDate": "2017-07-06",
       "endDate": "Present",
-      "summary": "Head of online presence for Ka Leo",
+      "summary": "Provide support for and maintain the organization's Learning Management System",
       "highlights": [
         "Maintain, update, and oversee official college newspaper website",
         "Drive, design and build student-community projects for UH Manoa"
