@@ -13,7 +13,7 @@ labels:
 summary: A game design project based off of the James Conway's Game of Life.  
 ---
 
-<div class="ui small rounded images">
+<div class="ui large rounded images">
   <img class="ui image" src="../images/palmtreeisland2.png">
 </div>
 
