@@ -148,30 +148,43 @@
   ],
   "volunteer": [
     {
-      "organization": "Center for R Energy and Island Sustainability",
-      "website": "http://manoa.hawaii.edu/reis",
-      "position": "Software Developer",
-      "startDate": "2016-01-01",
+      "organization": "Museum Manager",
+      "website": "",
+      "position": "Augemented Reality",
+      "startDate": "",
       "endDate": "Present",
-      "summary": "Lead developer for weather sensing project",
+      "summary": "A tycoon game whereby players take on the role as museum curator.  Players develop exhibit halls and restore masterpieces to enhance their donations while gaining availability to more artifacts.",
       "highlights": [
-        "Design firmware for distributed weather sensor network",
-        "Maintain custom data collection and storage infrastructure"
+        "",
+        ""
       ]
     },
     {
-      "organization": "",
+      "organization": "Tour of Williamsburg",
       "website": "",
-      "position": "Professional organization involvement",
+      "position": "Virtual Reality",
       "startDate": "",
       "endDate": "",
-      "summary": "",
+      "summary": "A 3-D representation of the historical buildings of Colonial Williamsburg whereby vistions can manuaver around the city in virtual reality.",
       "highlights": [
-        "Chair, ACM Manoa, 2016-Present",
-        "Member, IEEE Student Branch, 2014-Present",
-        "Webmaster/IT Officer, IEEE Student Branch, UH Manoa, 2012-2013"
+        "",
+        "",
+        ""
       ]
-    }
+    },
+    {
+      "organization": "Toxicity",
+      "website": "",
+      "position": "Digital Game",
+      "startDate": "",
+      "endDate": "",
+      "summary": "A 3-D representation of the historical buildings of Colonial Williamsburg whereby vistions can manuaver around the city in virtual reality.",
+      "highlights": [
+        "",
+        "",
+        ""
+      ]
+    },
   ],
   "awards": [
     {
