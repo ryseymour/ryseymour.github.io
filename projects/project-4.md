@@ -13,7 +13,7 @@ labels:
 summary: Tater is a kid's 3D platformer game where players must collect a seed, water and sun to grow flowers that will allow the player to reach different parts of a level.  
 ---
 
-<div class="ui small rounded images">
+<div class="ui large rounded images">
   <img class="ui image" src="../images/Tater.png">
   <img class="ui image" src="../images/Tater3.png">
 </div>
