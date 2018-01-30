@@ -13,7 +13,7 @@ labels:
 summary: A tour of the historical buildings of Colonial Williamsburg in Virtual Reality.
 ---
 
-<div class="ui small rounded images">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/Wburg1.png">
   <img class="ui image" src="../images/wburg3.png">
 </div>
