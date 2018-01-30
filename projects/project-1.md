@@ -2,43 +2,34 @@
 layout: project
 type: project
 image: images/palmtreeisland2.png
-title: Micromouse
-permalink: projects/micromouse
+title: Emergence
+permalink: projects/emergence
 # All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+date: 2017-10
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - Artificial Intelligence
+  - 3D Modelling
+  - C#
+summary: A game design project based off of the James Conway's Game of Life.  
 ---
 
 <div class="ui small rounded images">
   <img class="ui image" src="../images/palmtreeisland2.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
+  <img class="ui image" src="">
+  <img class="ui image" src="">
+  <img class="ui image" src="">
 </div>
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+Emergence is a game design project based off of James Conway's Game of Life, one of the first computer simulations dealing with basic AI fuctioning.  Positioned on a desert island, players can plant coconuts to bring the island to life.  The rules of the simulation follow closely with Conway's orginial parameters.  The longer the coconut tree survives the larger it grows. 
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
+The coding challenges for this class project included basic AI programming, learning two-dimensional arrays and lists.  
 
-Here is some code that illustrates how we read values from the line sensors:
+For this project, I created all of the 3D palm tree models and applied distinct textures to each using the software program Blender.
 
-```js
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
+The game has a basic movement control system.  Left Mouse Click to plant coconuts, Keyboard arrows to move, and mouse scroll wheel to zoom in.  Click the button below to play.    
 
-You can learn more at the [Palm Tree Island Simulation](http://ryseymour.github.io/treeproto/).
+
+Click to play [Emergence](http://ryseymour.github.io/treeproto/).
 
 
 
