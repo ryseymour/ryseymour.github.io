@@ -40,7 +40,7 @@
       ]
     },
     {
-      "name": "AR & VR",
+      "name": "Augmented & Virtual Reality,
       "keywords": [
       ]
     }
@@ -57,13 +57,17 @@
       ]
     },
     {
-      "name": "Toolsets/OS",
+      "name": "Toolsets",
       "level": "",
       "keywords": [
-        "Unity",
+        "Unity 3D",
         "Blender",
+        "ARCore",
+        "Adobe Creative Suite",
+        "Sublime Text",
         "Git/GitHub",
         "Twine",
+        "Microsoft Office Suite",
       ]
     }
   ],
@@ -87,8 +91,17 @@
       "gpa": "",
       "courses": ["Darwin's Angry Finches, Boardgame teaching adaptation to environment", "Fantasy Taxonomy, Cardgame teaching taxonomy", 
       ]
-    }
-    
+    }, 
+       {
+      "institution": "Liberty University",
+      "area": "Psychology",
+      "studyType": "B.S.",
+      "startDate": "",
+      "endDate": "2012",
+      "gpa": "",
+      "courses": ["Darwin's Angry Finches, Boardgame teaching adaptation to environment", "Fantasy Taxonomy, Cardgame teaching taxonomy", 
+      ]
+    }, 
   ],
   "work": [
     {
