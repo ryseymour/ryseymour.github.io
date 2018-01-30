@@ -17,14 +17,10 @@
     "profiles": [
       {
         "network": "github",
-        "username": "sourseymour",
-        "url": "http://github.com/sourseymour"
+        "username": "ryseymour",
+        "url": "http://github.com/ryseymour"
       },
-      {
-        "network": "linkedin",
-        "username": "ryan-seymour",
-        "url": "http://linkedin.com/in/ryan-seymour"
-      },
+
 
     ]
   },
