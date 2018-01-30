@@ -13,12 +13,9 @@ labels:
 summary: A tour of the historical buildings of Colonial Williamsburg in Virtual Reality.
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
+<img class="ui medium right floated rounded image" src="../images/Wburg3.png">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+The Virtual Reality Tour of Williamsburg was a game design project I worked on during the summer of 2017.  The project had me reconstruct historical buildings in a 3D modeling software called Blender.  The textures on the buildings result from photographs I had taken during a visit to Williamsburg and then added to my custom made 3D models.  
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
+The challenges of learning 3D modeling were frequent and hard to navigate.  One of the most difficult problems was exporting models from the 3D modeling software Blender to Unity.  
 
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
- 
-Source: <a href="https://github.com/theVacay/vacay"><i class="large github icon"></i>theVacay/vacay</a>
