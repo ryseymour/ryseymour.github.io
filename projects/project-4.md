@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Tater2.png
+image: images/Tater.png
 title: Tater
 permalink: projects/Tater
 # All dates must be YYYY-MM-DD format!
@@ -14,7 +14,7 @@ summary: Tater is a kid's 3D platformer game where players must collect a seed, 
 ---
 
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/Tater.png">
+  <img class="ui image" src="../images/Tater2.png">
   <img class="ui image" src="../images/Tater3.png">
 </div>
 
