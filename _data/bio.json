@@ -108,8 +108,8 @@
       "company": "American University",
       "position": "Executive Assistant to the Dean of Undergraduate Education",
       "website": "",
-      "startDate": "2015-10-12",
-      "endDate": "2017-07-06",
+      "startDate": "2015-10",
+      "endDate": "2017-07",
       "summary": "Organized and maintained the events and schedule of the Dean of Undergraduate Education and associated office",
       "highlights": [
         "Maintained and developed Sharepoint databases for office workflows and processes",
@@ -118,21 +118,32 @@
       
        },
     {
-      "company": "American University",
-      "position": "Executive Assistant to the Dean of Undergraduate Education",
+      "company": "Assistant Director",
+      "position": "LADO International College",
       "website": "",
-      "startDate": "2015-10-12",
-      "endDate": "2017-07-06",
+      "startDate": "2012-08",
+      "endDate": "2015-10",
       "summary": "Organized and maintained the events and schedule of the Dean of Undergraduate Education and associated office",
       "highlights": [
         "Maintained and developed Sharepoint databases for office workflows and processes",
         
       ]
-      
+        },
+    {
+      "company": "Assistant Director",
+      "position": "LADO International College",
+      "website": "",
+      "startDate": "2012-08",
+      "endDate": "2015-10",
+      "summary": "Organized and maintained the events and schedule of the Dean of Undergraduate Education and associated office",
+      "highlights": [
+        "Maintained and developed Sharepoint databases for office workflows and processes",
+        
+      ]
     }
     
   ],
-  "volunteer": [
+  "Volunteer": [
     {
       "organization": "Center for R Energy and Island Sustainability",
       "website": "http://manoa.hawaii.edu/reis",
