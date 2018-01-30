@@ -10,7 +10,7 @@ labels:
   - Unity
   - 3D Modelling
   - Biology
-summary: A First Person Action Game where the player shrink to microscopic levels within the human body to destroy disease causing bacteria.
+summary: A First Person action game where the player shrink to microscopic levels within the human body to destroy disease causing bacteria.
 ---
 
 <div class="ui large rounded images">
