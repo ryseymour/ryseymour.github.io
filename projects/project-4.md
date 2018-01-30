@@ -5,7 +5,7 @@ image: images/Tater2.png
 title: Tater
 permalink: projects/Tater
 # All dates must be YYYY-MM-DD format!
-date: 2016-010-15
+date: 2016-10-15
 labels:
   - Unity
   - Platformer
