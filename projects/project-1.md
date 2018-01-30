@@ -10,7 +10,7 @@ labels:
   - Artificial Intelligence
   - 3D Modelling
   - C#
-summary: A game design project based off of the James Conway's Game of Life.  
+summary: A game design project based off of James Conway's Game of Life.  
 ---
 
 <div class="ui large rounded images">
