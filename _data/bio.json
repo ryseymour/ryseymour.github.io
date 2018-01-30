@@ -187,11 +187,30 @@
       "summary": "Students must work in teams to find the taxonomic location of fantasy animals from categories of domain  down to family."
     },
      {
-      "title": "Fantasy Taxonomy",
-      "date": "2013-03",
-      "awarder": "Card game",
-      "summary": "Students must work in teams to find the taxonomic location of fantasy animals from categories of domain  down to family."
+      "title": "Sprouts",
+      "date": "2016-09",
+      "awarder": "Boardgame",
+      "summary": "Players must grow a diverse group of crops for the Harvest Festival.  They must manage resources of energy, time, land, and currency to be named the best Harvest Festival gardener."
     },
+     {
+      "title": "Toxicity",
+      "date": "2017-05",
+      "awarder": "Digital Game",
+      "summary": "Players shrink to microscopic size to destroy colonies of bacteria that have invaded a patients blood stream."
+    },
+     {
+      "title": "Tour of Williamsburg",
+      "date": "2017-08",
+      "awarder": "Virtual Reality",
+      "summary": "A 3-D representation of the historical buildings of Colonial Williamsburg whereby vistions can manuaver around the city in virtual reality."
+    },
+         {
+      "title": "Museum Manager",
+      "date": "Present",
+      "awarder": "Augemented Reality",
+      "summary": "A tycoon game whereby players take on the role as museum curator.  Players develop exhibit halls and restore masterpieces to enhance their donations while gaining availability to more artifacts."
+    },
+    
   ],
   "references": [
     {
