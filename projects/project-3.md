@@ -13,7 +13,10 @@ labels:
 summary: A First Person Shooter where the player shrink to microscopic levels within the human body to destroy disease causing bacteria.
 ---
 
-<img class="ui image" src="{{ site.baseurl }}/images/cotton-header.png">
+<div class="ui small rounded images">
+  <img class="ui image" src="../images/Toxicity2.png">
+  <img class="ui image" src="../images/Toxicity3.png">
+</div>
 
 Toxicity is a horror themed First Person Shooter where the player must shrink down to microscopic sizes to aid a patient's immune system with destroying deadly forms of bacteria. 
 
