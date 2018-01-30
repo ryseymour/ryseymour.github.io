@@ -13,7 +13,10 @@ labels:
 summary: A tour of the historical buildings of Colonial Williamsburg in Virtual Reality.
 ---
 
-<img class="ui medium right floated rounded image" src="../images/Wburg3.png">
+<div class="ui small rounded images">
+  <img class="ui image" src="../images/Wburg1.png">
+  <img class="ui image" src="../images/Wburg3.png">
+</div>
 
 The Virtual Reality Tour of Williamsburg was a game design project I worked on during the summer of 2017.  The project had me reconstruct historical buildings in a 3D modeling software called Blender.  The textures on the buildings result from photographs I had taken during a visit to Williamsburg and then added to my custom made 3D models.  
 
