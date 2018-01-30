@@ -20,6 +20,6 @@ summary: A First Person action game where the player shrink to microscopic level
 
 Toxicity is a horror themed, combat game where the player must shrink down to microscopic sizes to aid a patient's immune system with destroying deadly forms of bacteria. 
 
-This was my final project for my first Game Development course.  It featured a healthbar, timer, two weapons to choose from and a heavy reliance on a flashlight in a dark environment.  Enemy behaviors were also varied for this game.  Some could follow the player and duplicate their numbers.  Others could act as turrets and shoot poisonous globs at the player.  A late add to this game was an hp bar for enemies to help players with a sense of progression.  
+This was my final project for my first Game Development course.  It featured a healthbar, timer, two weapons to choose from and a heavy reliance on a flashlight in a dark environment.  Enemy behaviors were also varied for this game.  Some could follow the player and duplicate their numbers.  Others could act as turrets and shoot poisonous globs at the player.  A late add to this game was an HP bar for enemies to help players with a sense of progression.  
 
 
