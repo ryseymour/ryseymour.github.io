@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/Tater.png
+image: images/Tater2.png
 title: Tater
 permalink: projects/Tater
 # All dates must be YYYY-MM-DD format!
