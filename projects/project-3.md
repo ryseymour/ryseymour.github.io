@@ -13,7 +13,7 @@ labels:
 summary: A First Person Shooter where the player shrink to microscopic levels within the human body to destroy disease causing bacteria.
 ---
 
-<div class="ui small rounded images">
+<div class="ui large rounded images">
   <img class="ui image" src="../images/Toxicity2.png">
   <img class="ui image" src="../images/Toxicity3.png">
 </div>
