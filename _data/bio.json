@@ -1,242 +1,458 @@
-{
-  "basics": {
-    "name": "Ryan Seymour",
-    "label": "Game Developer & E-Learning Coordinator",
-    "picture": "https://ryseymour.github.io/images/profilepic.png",
-    "email": "ry.seymour@gmail.com",
-    "phone": "703-687-7687",
-    "website": "https://ryseymour.github.io",
-    "summary": "Seeking opportunities to expand game design knowledge and to collaborate on engaging, educational games.",
-    "location": {
-      "address": "",
-      "postalCode": "20814",
-      "city": "Bethesda",
-      "countryCode": "USA",
-      "region": "Maryland"
-    },
-    "profiles": [
-      {
-        "network": "github",
-        "username": "ryseymour",
-        "url": "http://github.com/ryseymour/"
-      },
-      {
-        "network": "linkedin",
-        "username": "ryan-seymour",
-        "url": "http://linkedin.com/in/ryan-seymour"
-      },
+<!DOCTYPE html>
+<html>
 
-    ]
-  },
-  "interests": [
-    {
-      "name": "Game Design",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "STEM Education",
-      "keywords": [
-      ]
-    },
-    {
-      "name": "Augmented & Virtual Reality",
-      "keywords": [
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Languages and Frameworks",
-      "level": "",
-      "keywords": [
-        "C#",
-        "HTML5",
-        "CSS",
-        "Javascript",
-      ]
-    },
-    {
-      "name": "Toolsets",
-      "level": "",
-      "keywords": [
-        "Unity 3D",
-        "Blender",
-        "ARCore",
-        "Adobe Creative Suite",
-        "Sublime Text",
-        "Git/GitHub",
-        "Twine",
-        "Microsoft Office Suite",
-      ]
-    }
-  ],
-  "education": [
-    {
-      "institution": "American University",
-      "area": "Game Design (expected Spring, 2018)",
-      "studyType": "M.A.",
-      "startDate": "2016-09",
-      "endDate": "Present",
-      "gpa": "",
-      "courses": ["Museum Manager, Augmented Reality simulation Game", "Tour of Williamsburg, Virtual Reality 3D modeling of historical buildings", "Toxicity, 3D Digital Game of immune response", "Sprouts, Boardgame relating to farming and resource management",
-      ]
-    },
-    {
-      "institution": "Mary Baldwin College",
-      "area": "Middle School Science",
-      "studyType": "Teacher Licensure",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": "",
-      "courses": ["Darwin's Angry Finches, Boardgame teaching natural selection", "Fantasy Taxonomy, Card game teaching taxonomy", 
-      ]
-    }, 
-       {
-      "institution": "Liberty University",
-      "area": "Psychology",
-      "studyType": "B.S.",
-      "startDate": "2002-08",
-      "endDate": "2006-05",
-      "gpa": "",
-      "courses": ["Gender Analysis of Video Game Play, Thesis", 
-      ]
-    }, 
-  ],
-  "work": [
-    {
-      "company": "American University",
-      "position": "E-Learning Coordinator",
-      "website": "",
-      "startDate": "2017-07-06",
-      "endDate": "Present",
-      "summary": "Provide support for and maintain the organization's Learning Management System",
-      "highlights": [
-        "Provide user support for the organization's Learning Management System to faculty and students",
-        "Maintain LMS database functionality while providing support for server updates",
-        "Project manager for students seeking to develop skills and projects related to game development",
-      ]
-    },
-    {
-      "company": "American University",
-      "position": "Executive Assistant to the Dean of Undergraduate Education",
-      "website": "",
-      "startDate": "2015-10",
-      "endDate": "2017-07",
-      "summary": "Coordinated events, processes and technical systems for the Office of Undergraduate Education",
-      "highlights": [
-        "Maintained and developed Sharepoint databases for office workflows and processes",
-        "Analyzed datasets to improve outreach of department",
-        "Collaborate with faculty and administrators to develop video lessons for online learning initatives", 
-        
-      ]
-      
-       },
-    {
-      "company": "LADO International College",
-      "position": "Assistant Director",
-      "website": "",
-      "startDate": "2012-08",
-      "endDate": "2015-10",
-      "summary": "Managed all aspects of English language training programs, including the student application, testing, payment and conduct processes",
-      "highlights": [
-        "Supervised teachers, administrative staff and student workers in various facets that include: training, recruitment, scheduling and performance reviews",
-        "Advised ESL students on academic and extracurricular opportunities",
-        "Developed active learning experiences for students through planning field trips to the Smithsonian Institution museums",
-      ]
-        },
-    {
-      
-      "position": "Additional Professional Experience",
-      "website": "",
-      "summary": "",
-      "highlights": [
-        "Fluvanna Middle School,Life Science Student Teacher, 2012",
-        "WorldStrides,Account Service Representative, 2010 - 2011",
-        "ESL Teacher, Korea & China, 2006 - 2010",
-        
-        
-      ]
-    }
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <title>
     
-  ],
-  "activity": [
-    {
-      "organization": "",
-      "website": "",
-      "position": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "",
-        ""
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "",
-        "",
-        ""
-      ]
-    },
-    {
-      "organization": "",
-      "website": "",
-      "position": "",
-      "startDate": "",
-      "endDate": "",
-      "summary": "",
-      "highlights": [
-        "",
-        "",
-        ""
-      ]
-    },
-  ],
-  "activity": [
-    {
-      "title": "s",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    },
-    {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    },
-     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    },
-     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    },
-     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    },
-     {
-      "title": "",
-      "date": "",
-      "awarder": "",
-      "summary": ""
-    }
+    Ryan Seymour | Professional Portfolio
+  </title>
+
+  <!-- Load Javascript and CSS for Semantic UI -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/css/semantic-ui/semantic.min.js"></script>
+  <link rel="stylesheet" href="/css/semantic-ui/semantic.min.css">
+
+  <!-- Load Techfolio CSS customizations -->
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-default.css">
+  <link rel="stylesheet" type="text/css" href="/css/stylesheet-customizations.css">
+
+  <link rel="stylesheet" type="text/css" href="/css/print-default.css" media="print">
+  <link rel="stylesheet" type="text/css" href="/css/print-customizations.css" media="print">
+
+  <!-- Load a rouge theme from the sample themes in css/rouge.
+       See https://benhur07b.github.io/2017/03/25/add-syntax-highlighting-to-your-jekyll-site-with-rouge.html
+  -->
+  <link rel="stylesheet" type="text/css" href="/css/rouge/igorpro.css">
+
+  <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+  
+
+
+</head>
+
+
+  <body>
+    <!-- Used by all builtin themes. Now we list number of essays and projects. -->
+
+
+
+
+
+
+<div class="nonprintable">
+  <nav class="ui stackable menu">
+    <a href="/" class="brand item">
+      <img class="ui avatar image" src="https://ryseymour.github.io/images/profilepic.png"><span>Ryan Seymour</span>
+    </a>
     
-  ]
-}
+    <a href="/projects" class=" item">Projects (4)</a>
+    
+    
+    <a href="/bio" class="  active  item">Resume</a>
+  </nav>
+</div>
+
+<div style="margin-top: 10px; " class="ui stackable grid container">
+
+  <div class="sixteen wide column no-bottom">
+    <h2 class="ui center aligned header no-bottom">Ryan Seymour</h2>
+  </div>
+
+  <div class="eight wide left aligned column">
+    <!-- Used by theme-bio-builtin-1,2 -->
+
+
+  <p class="ui no-bottom"><a href="https://ryseymour.github.io"> <i class="large home icon "></i>ryseymour.github.io</a></p>
+
+
+
+<p class="ui no-bottom"><a href="mailto:ry.seymour@gmail.com"> <i class="large mail outline icon "></i>ry.seymour@gmail.com</a></p>
+
+
+
+     <p class="ui no-bottom"><a href="http://github.com/ryseymour/"> <i class="large github icon "></i>ryseymour</a></p>
+
+     <p class="ui no-bottom"><a href="http://linkedin.com/in/ryan-seymour"> <i class="large linkedin icon "></i>ryan-seymour</a></p>
+
+
+  </div>
+
+  <div class="eight wide right aligned column">
+    <!-- Used by theme-bio-builtin-1,2 -->
+
+<p class="ui no-bottom"></p>
+<p class="ui no-bottom">Bethesda, Maryland 20814 USA</p>
+<p class="ui no-bottom">703-687-7687</p>
+  </div>
+</div>
+
+<div style="margin-bottom: 20px" class="ui stackable grid container">
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+<div class="row">
+  <div class="two wide column">
+    <h3 class="ui left aligned header no-bottom">Interests</h3>
+  </div>
+
+  <div class="fourteen wide column no-bottom">
+    <p class="ui no-bottom">
+    
+      Game Design
+      <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
+      , 
+    
+      STEM Education
+      <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
+      , 
+    
+      Augmented & Virtual Reality
+      <!-- Unfortunately the following must all be on a single line so that there are no spaces before the commas. -->
+      
+    
+    </p>
+  </div>
+</div>
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+<div class="row">
+  <div class="two wide column">
+    <h3 class="ui left aligned header no-bottom">Skills</h3>
+  </div>
+
+  <div class="fourteen wide column no-bottom">
+    <p class="ui no-bottom">
+    
+      <p class="ui no-bottom">
+      <b>Languages and Frameworks:</b>
+      
+        C#, 
+      
+        HTML5, 
+      
+        CSS, 
+      
+        Javascript
+      
+      </p>
+    
+      <p class="ui no-bottom">
+      <b>Toolsets:</b>
+      
+        Unity 3D, 
+      
+        Blender, 
+      
+        ARCore, 
+      
+        Adobe Creative Suite, 
+      
+        Sublime Text, 
+      
+        Git/GitHub, 
+      
+        Twine, 
+      
+        Microsoft Office Suite
+      
+      </p>
+    
+
+  </div>
+</div>
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+<div class="row">
+<div class="two wide column">
+  <h3 class="ui left aligned header no-bottom">Education</h3>
+</div>
+
+<div class="fourteen wide column no-bottom">
+  
+
+  <div class="ui grid">
+    <div class="twelve wide column no-bottom">
+      <p class="ui no-bottom"><b>American University</b></p>
+      <p class="ui no-bottom">M.A., Game Design (expected Spring, 2018)</p>
+      
+      <ul style="margin: 0px;">
+        
+        <li>Museum Manager, Augmented Reality simulation Game</li>
+        
+        <li>Tour of Williamsburg, Virtual Reality 3D modeling of historical buildings</li>
+        
+        <li>Toxicity, 3D Digital Game of immune response</li>
+        
+        <li>Sprouts, Boardgame relating to farming and resource management</li>
+        
+      </ul>
+      
+    </div>
+    <div class="four wide right aligned column no-bottom">
+      <p class="ui no-bottom"><b>
+        
+        2016
+        
+        
+        -
+        
+        
+          
+            Present
+          
+        
+      </b></p>
+    </div>
+  </div>
+
+  
+
+  <div class="ui grid">
+    <div class="twelve wide column no-bottom">
+      <p class="ui no-bottom"><b>Mary Baldwin College</b></p>
+      <p class="ui no-bottom">Teacher Licensure, Middle School Science</p>
+      
+      <ul style="margin: 0px;">
+        
+        <li>Darwin's Angry Finches, Boardgame teaching natural selection</li>
+        
+        <li>Fantasy Taxonomy, Card game teaching taxonomy</li>
+        
+      </ul>
+      
+    </div>
+    <div class="four wide right aligned column no-bottom">
+      <p class="ui no-bottom"><b>
+        
+        
+        
+        
+        
+          
+            2012
+          
+        
+      </b></p>
+    </div>
+  </div>
+
+  
+
+  <div class="ui grid">
+    <div class="twelve wide column no-bottom">
+      <p class="ui no-bottom"><b>Liberty University</b></p>
+      <p class="ui no-bottom">B.S., Psychology</p>
+      
+      <ul style="margin: 0px;">
+        
+        <li>Gender Analysis of Video Game Play, Thesis</li>
+        
+      </ul>
+      
+    </div>
+    <div class="four wide right aligned column no-bottom">
+      <p class="ui no-bottom"><b>
+        
+        2002
+        
+        
+        -
+        
+        
+          
+            2006
+          
+        
+      </b></p>
+    </div>
+  </div>
+
+  
+</div>
+</div>
+
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+<div class="row">
+  <div class="two wide column">
+    <h3 class="ui left aligned header no-bottom">Work</h3>
+  </div>
+
+  <div class="fourteen wide column no-bottom">
+    
+
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>E-Learning Coordinator, American University</b></p>
+        <p class="ui no-bottom"><a href=""></a></p>
+        <p class="ui no-bottom">Provide support for and maintain the organization's Learning Management System</p>
+        
+        <ul style="margin: 0px;">
+          
+          <li>Provide user support for the organization's Learning Management System to faculty and students</li>
+          
+          <li>Maintain LMS database functionality while providing support for server updates</li>
+          
+          <li>Project manager for students seeking to develop skills and projects related to game development</li>
+          
+        </ul>
+        
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>
+          
+          2017
+          
+          
+          -
+          
+          
+            
+              Present
+            
+          
+        </b></p>
+      </div>
+    </div>
+
+    
+
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>Executive Assistant to the Dean of Undergraduate Education, American University</b></p>
+        <p class="ui no-bottom"><a href=""></a></p>
+        <p class="ui no-bottom">Coordinated events, processes and technical systems for the Office of Undergraduate Education</p>
+        
+        <ul style="margin: 0px;">
+          
+          <li>Maintained and developed Sharepoint databases for office workflows and processes</li>
+          
+          <li>Analyzed datasets to improve outreach of department</li>
+          
+          <li>Collaborate with faculty and administrators to develop video lessons for online learning initatives</li>
+          
+        </ul>
+        
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>
+          
+          2015
+          
+          
+          -
+          
+          
+            
+              2017
+            
+          
+        </b></p>
+      </div>
+    </div>
+
+    
+
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>Assistant Director, LADO International College</b></p>
+        <p class="ui no-bottom"><a href=""></a></p>
+        <p class="ui no-bottom">Managed all aspects of English language training programs, including the student application, testing, payment and conduct processes</p>
+        
+        <ul style="margin: 0px;">
+          
+          <li>Supervised teachers, administrative staff and student workers in various facets that include: training, recruitment, scheduling and performance reviews</li>
+          
+          <li>Advised ESL students on academic and extracurricular opportunities</li>
+          
+          <li>Developed active learning experiences for students through planning field trips to the Smithsonian Institution museums</li>
+          
+        </ul>
+        
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>
+          
+          2012
+          
+          
+          -
+          
+          
+            
+              2015
+            
+          
+        </b></p>
+      </div>
+    </div>
+
+    
+
+    <div class="ui grid">
+      <div class="twelve wide column no-bottom">
+        <p class="ui no-bottom"><b>Additional Professional Experience, </b></p>
+        <p class="ui no-bottom"><a href=""></a></p>
+        <p class="ui no-bottom"></p>
+        
+        <ul style="margin: 0px;">
+          
+          <li>Fluvanna Middle School,Life Science Student Teacher, 2012</li>
+          
+          <li>WorldStrides,Account Service Representative, 2010 - 2011</li>
+          
+          <li>ESL Teacher, Korea & China, 2006 - 2010</li>
+          
+        </ul>
+        
+      </div>
+      <div class="four wide right aligned column no-bottom">
+        <p class="ui no-bottom"><b>
+          
+          
+          
+        </b></p>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+  <!-- Used by theme-bio-builtin-1 -->
+
+
+</div>
+
+
+
+    <!-- Always create iframes to embed videos if present. See: http://semantic-ui.com/modules/embed.html -->
+
+<script>
+  $('.ui.embed').embed();
+</script>
+
+
+  </body>
+
+</html>
