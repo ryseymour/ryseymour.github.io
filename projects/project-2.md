@@ -22,3 +22,12 @@ The Virtual Reality Tour of Williamsburg was a game design project I worked on d
 
 The challenges of learning 3D modeling were frequent and hard to navigate.  One of the most difficult problems was exporting models from the 3D modeling software Blender to Unity.  
 
+Additional images include another 3D project for a modern house interior.
+
+<div class="ui large rounded images">
+  <img class="ui image" src="../images/lr1.png">
+  <img class="ui image" src="../images/lr2.png">
+  <img class="ui image" src="../images/bathroom.png">
+  <img class="ui image" src="../images/bedroom 1.png">
+</div>
+
