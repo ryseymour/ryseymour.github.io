@@ -128,7 +128,7 @@ var UnityLoader = UnityLoader || {
 
   },
   downloadJob: function (Module, job) {
-    var xhr = job.parameters.objParameters ? new UnityLoader.XMLHttpRequest(job.parameters.objParameters) : new XMLHttpRequest();
+    var xhr = new XMLHttpRequest();
     xhr.open("GET", job.parameters.url);
     xhr.responseType = "arraybuffer";
     xhr.onload = function () { UnityLoader.Compression.decompress(new Uint8Array(xhr.response), function (decompressed) { job.complete(decompressed) }) };
@@ -139,13 +139,12 @@ var UnityLoader = UnityLoader || {
     xhr.send();
     
   },
-  scheduleBuildDownloadJob: function (Module, jobId, urlId) {
-    UnityLoader.Progress.update(Module, jobId);
-    UnityLoader.Job.schedule(Module, jobId, [], UnityLoader.downloadJob, {
-      url: Module.resolveBuildUrl(Module[urlId]),
-      onprogress: function(e) { UnityLoader.Progress.update(Module, jobId, e); },
-      onload: function(e) { UnityLoader.Progress.update(Module, jobId, e); },
-      objParameters: Module.companyName && Module.productName && Module.cacheControl && Module.cacheControl[urlId] ? { companyName: Module.companyName, productName: Module.productName, cacheControl: Module.cacheControl[urlId] } : null,
+  scheduleBuildDownloadJob: function (Module, id, url) {
+    UnityLoader.Progress.update(Module, id);
+    UnityLoader.Job.schedule(Module, id, [], UnityLoader.downloadJob, {
+      url: Module.resolveBuildUrl(url),
+      onprogress: function(e) { UnityLoader.Progress.update(Module, id, e); },
+      onload: function(e) { UnityLoader.Progress.update(Module, id, e); },
     });
     
   },
@@ -153,27 +152,27 @@ var UnityLoader = UnityLoader || {
     Module.useWasm = Module["wasmCodeUrl"] && UnityLoader.SystemInfo.hasWasm;
     
     if (Module.useWasm) {
-      UnityLoader.scheduleBuildDownloadJob(Module, "downloadWasmCode", "wasmCodeUrl");
+      UnityLoader.scheduleBuildDownloadJob(Module, "downloadWasmCode", Module["wasmCodeUrl"]);
       UnityLoader.Job.schedule(Module, "processWasmCode", ["downloadWasmCode"], UnityLoader.processWasmCodeJob);
-      UnityLoader.scheduleBuildDownloadJob(Module, "downloadWasmFramework", "wasmFrameworkUrl");
+      UnityLoader.scheduleBuildDownloadJob(Module, "downloadWasmFramework", Module["wasmFrameworkUrl"]);
       UnityLoader.Job.schedule(Module, "processWasmFramework", ["downloadWasmFramework", "processWasmCode", "setupIndexedDB"], UnityLoader.processWasmFrameworkJob);
 
     } else if (Module["asmCodeUrl"]) {
-      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmCode", "asmCodeUrl");
+      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmCode", Module["asmCodeUrl"]);
       UnityLoader.Job.schedule(Module, "processAsmCode", ["downloadAsmCode"], UnityLoader.processAsmCodeJob);
-      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmMemory", "asmMemoryUrl");
+      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmMemory", Module["asmMemoryUrl"]);
       UnityLoader.Job.schedule(Module, "processAsmMemory", ["downloadAsmMemory"], UnityLoader.processAsmMemoryJob);
       Module["memoryInitializerRequest"] = { addEventListener: function (type, callback) { Module["memoryInitializerRequest"].callback = callback; } }
       if (Module.asmLibraryUrl)
         Module.dynamicLibraries = [Module.asmLibraryUrl].map(Module.resolveBuildUrl);
-      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmFramework", "asmFrameworkUrl");
+      UnityLoader.scheduleBuildDownloadJob(Module, "downloadAsmFramework", Module["asmFrameworkUrl"]);
       UnityLoader.Job.schedule(Module, "processAsmFramework", ["downloadAsmFramework", "processAsmCode", "setupIndexedDB"], UnityLoader.processAsmFrameworkJob);
 
     } else {
       throw "WebAssembly support is not detected in this browser.";
     }
 
-    UnityLoader.scheduleBuildDownloadJob(Module, "downloadData", "dataUrl");
+    UnityLoader.scheduleBuildDownloadJob(Module, "downloadData", Module["dataUrl"]);
     UnityLoader.Job.schedule(Module, "setupIndexedDB", [], UnityLoader.setupIndexedDBJob);
         
     Module["preRun"].push(function () {
@@ -208,8 +207,9 @@ var UnityLoader = UnityLoader || {
         xhr.open("GET", gameInstance.url, true);
         xhr.responseType = "text";
         xhr.onerror = function() {
-          Module.print("Could not download " + gameInstance.url);
-          if (document.URL.indexOf("file:") == 0) {
+          console.log("Could not download " + gameInstance.url);
+          if (document.URL.indexOf("file:") == 0)
+          {
             alert ("It seems your browser does not support running Unity WebGL content from file:// urls. Please upload it to an http server, or try a different browser.");
           }   
         }
@@ -239,10 +239,6 @@ var UnityLoader = UnityLoader || {
 
           container.style.background = Module.backgroundUrl ? "center/cover url('" + Module.resolveBuildUrl(Module.backgroundUrl) + "')" :
             Module.backgroundColor ? " " + Module.backgroundColor : "";
-
-          // show loading screen as soon as possible
-          gameInstance.onProgress(gameInstance, 0.0);
-
           UnityLoader.loadModule(Module);
         }
         xhr.send();
@@ -275,13 +271,10 @@ var UnityLoader = UnityLoader || {
           return gameInstance.Module.SendMessage.apply(gameInstance.Module, arguments);
       },
     };
-
+    
     gameInstance.Module.gameInstance = gameInstance;
     gameInstance.popup = function (message, callbacks) { return UnityLoader.Error.popup(gameInstance, message, callbacks); };
-    gameInstance.Module.postRun.push(function() {
-      gameInstance.onProgress(gameInstance, 1);
-    });
-
+    
     for (var parameter in parameters) {
       if (parameter == "Module") {
         for (var moduleParameter in parameters[parameter])
@@ -667,205 +660,6 @@ var UnityLoader = UnityLoader || {
     },
 
   },
-  XMLHttpRequest: function () {
-    var databaseName = "UnityCache";
-    var store = "XMLHttpRequest";
-    var version = 1;
-    
-    function log(message) {
-      console.log("[UnityCache] " + message);
-    }
-    
-    function resolveURL(url) {
-      resolveURL.link = resolveURL.link || document.createElement("a");
-      resolveURL.link.href = url;
-      return resolveURL.link.href;
-    }
-    
-    function isCrossOriginURL(url) {
-      var originMatch = window.location.href.match(/^[a-z]+:\/\/[^\/]+/);
-      return !originMatch || url.lastIndexOf(originMatch[0], 0);
-    }
-
-    function UnityCache() {
-      var cache = this;
-      cache.queue = [];
-
-      function initDatabase(database) {
-        if (typeof cache.database != "undefined")
-          return;
-        cache.database = database;
-        if (!cache.database)
-          log("indexedDB database could not be opened");
-        while (cache.queue.length) {
-          var queued = cache.queue.shift();
-          if (cache.database) {
-            cache.execute.apply(cache, queued);
-          } else if (typeof queued.onerror == "function") {
-            queued.onerror(new Error("operation cancelled"));
-          }
-        }
-      }
-      
-      try {
-        var indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
-        var openRequest = indexedDB.open(databaseName);
-        openRequest.onupgradeneeded = function (e) {
-          var objectStore = e.target.result.createObjectStore(store, { keyPath: "url" });
-          ["version", "company", "product", "updated", "revalidated", "accessed"].forEach(function (index) { objectStore.createIndex(index, index); });
-        };
-        openRequest.onsuccess = function (e) { initDatabase(e.target.result); };
-        openRequest.onerror = function () { initDatabase(null); };
-        setTimeout(openRequest.onerror, 1000);
-      } catch (e) {
-        initDatabase(null);
-      }
-    };
-    
-    UnityCache.prototype.execute = function (operation, parameters, onsuccess, onerror) {
-      if (this.database) {
-        try {
-          var target = this.database.transaction([store], ["put", "delete", "clear"].indexOf(operation) != -1 ? "readwrite" : "readonly").objectStore(store);
-          if (operation == "openKeyCursor") {
-            target = target.index(parameters[0]);
-            parameters = parameters.slice(1);
-          }
-          var request = target[operation].apply(target, parameters);
-          if (typeof onsuccess == "function")
-            request.onsuccess = function (e) { onsuccess(e.target.result); };
-          request.onerror = onerror;
-        } catch (e) {
-          if (typeof onerror == "function")
-            onerror(e);
-        }
-      } else if (typeof this.database == "undefined") {
-        this.queue.push(arguments);
-      } else if (typeof onerror == "function") {
-        onerror(new Error("indexedDB access denied"));
-      }
-    };
-    
-    var resultCache = new UnityCache();
-    
-    function createResult(url, company, product, timestamp, xhr) {
-      var result = { url: url, version: version, company: company, product: product, updated: timestamp, revalidated: timestamp, accessed: timestamp, responseHeaders: {}, xhr: {} };
-      if (xhr) {
-        ["Last-Modified", "ETag"].forEach(function (header) { result.responseHeaders[header] = xhr.getResponseHeader(header); });
-        ["responseURL", "status", "statusText", "response"].forEach(function (property) { result.xhr[property] = xhr[property]; });
-      }
-      return result;
-    }
-
-    function CachedXMLHttpRequest(objParameters) {
-      this.cache = { enabled: false };
-      if (objParameters) {
-        this.cache.control = objParameters.cacheControl;
-        this.cache.company = objParameters.companyName;
-        this.cache.product = objParameters.productName;
-      }
-      this.xhr = new XMLHttpRequest(objParameters);
-      this.xhr.addEventListener("load", function () {
-        var xhr = this.xhr, cache = this.cache;
-        if (!cache.enabled || cache.revalidated)
-          return;
-        if (xhr.status == 304) {
-          cache.result.revalidated = cache.result.accessed;
-          cache.revalidated = true;
-          resultCache.execute("put", [cache.result]);
-          log("'" + cache.result.url + "' successfully revalidated and served from the indexedDB cache");
-        } else if (xhr.status == 200) {
-          cache.result = createResult(cache.result.url, cache.company, cache.product, cache.result.accessed, xhr);
-          cache.revalidated = true;
-          resultCache.execute("put", [cache.result], function (result) {
-            log("'" + cache.result.url + "' successfully downloaded and stored in the indexedDB cache");
-          }, function (error) {
-            log("'" + cache.result.url + "' successfully downloaded but not stored in the indexedDB cache due to the error: " + error);
-          });
-        } else {
-          log("'" + cache.result.url + "' request failed with status: " + xhr.status + " " + xhr.statusText);
-        }
-      }.bind(this));
-    };
-    
-    CachedXMLHttpRequest.prototype.send = function (data) {
-      var xhr = this.xhr, cache = this.cache;
-      var sendArguments = arguments;
-      cache.enabled = cache.enabled && xhr.responseType == "arraybuffer" && !data;
-      if (!cache.enabled)
-        return xhr.send.apply(xhr, sendArguments);
-      resultCache.execute("get", [cache.result.url], function (result) {
-        if (!result || result.version != version) {
-          xhr.send.apply(xhr, sendArguments);
-          return;
-        }
-        cache.result = result;
-        cache.result.accessed = Date.now();
-        if (cache.control == "immutable") {
-          cache.revalidated = true;
-          resultCache.execute("put", [cache.result]);
-          xhr.dispatchEvent(new Event('load'));
-          log("'" + cache.result.url + "' served from the indexedDB cache without revalidation");
-        } else if (isCrossOriginURL(cache.result.url) && (cache.result.responseHeaders["Last-Modified"] || cache.result.responseHeaders["ETag"])) {
-          var headXHR = new XMLHttpRequest();
-          headXHR.open("HEAD", cache.result.url);
-          headXHR.onload = function () {
-            cache.revalidated = ["Last-Modified", "ETag"].every(function (header) {
-              return !cache.result.responseHeaders[header] || cache.result.responseHeaders[header] == headXHR.getResponseHeader(header);
-            });
-            if (cache.revalidated) {
-              cache.result.revalidated = cache.result.accessed;
-              resultCache.execute("put", [cache.result]);
-              xhr.dispatchEvent(new Event('load'));
-              log("'" + cache.result.url + "' successfully revalidated and served from the indexedDB cache");
-            } else {
-              xhr.send.apply(xhr, sendArguments);
-            }
-          }
-          headXHR.send();
-        } else {
-          if (cache.result.responseHeaders["Last-Modified"]) {
-            xhr.setRequestHeader("If-Modified-Since", cache.result.responseHeaders["Last-Modified"]);
-            xhr.setRequestHeader("Cache-Control", "no-cache");
-          } else if (cache.result.responseHeaders["ETag"]) {
-            xhr.setRequestHeader("If-None-Match", cache.result.responseHeaders["ETag"]);
-            xhr.setRequestHeader("Cache-Control", "no-cache");
-          }
-          xhr.send.apply(xhr, sendArguments);
-        }
-      }, function (error) {
-        xhr.send.apply(xhr, sendArguments);
-      });
-    };
-    
-    CachedXMLHttpRequest.prototype.open = function (method, url, async, user, password) {
-      this.cache.result = createResult(resolveURL(url), this.cache.company, this.cache.product, Date.now());
-      this.cache.enabled = ["must-revalidate", "immutable"].indexOf(this.cache.control) != -1 && method == "GET" && this.cache.result.url.match("^https?:\/\/")
-        && (typeof async == "undefined" || async) && typeof user == "undefined" && typeof password == "undefined";
-      this.cache.revalidated = false;
-      return this.xhr.open.apply(this.xhr, arguments);
-    };
-    
-    CachedXMLHttpRequest.prototype.setRequestHeader = function (header, value) {
-      this.cache.enabled = false;
-      return this.xhr.setRequestHeader.apply(this.xhr, arguments);
-    };
-    
-    var xhr = new XMLHttpRequest();
-    for (var property in xhr) {
-      if (!CachedXMLHttpRequest.prototype.hasOwnProperty(property)) {
-        (function (property) {
-          Object.defineProperty(CachedXMLHttpRequest.prototype, property, typeof xhr[property] == "function" ? {
-            value: function () { return this.xhr[property].apply(this.xhr, arguments); },
-          } : {
-            get: function () { return this.cache.revalidated && this.cache.result.xhr.hasOwnProperty(property) ? this.cache.result.xhr[property] : this.xhr[property]; },
-            set: function (value) { this.xhr[property] = value; },
-          });
-        })(property);
-      }
-    }
-    
-    return CachedXMLHttpRequest;
-  } (),
   Utils: {
     assert: function (condition, text) {
       if (!condition)
@@ -1217,7 +1011,7 @@ var UnityLoader = UnityLoader || {
         }
       }
       var totalProgress = started ? (started - unfinishedNonComputable - (total ? computable * (total - loaded) / total : 0)) / started : 0;
-      Module.gameInstance.onProgress(Module.gameInstance, 0.9 * totalProgress);
+      Module.gameInstance.onProgress(Module.gameInstance, totalProgress);
 
     },
 
