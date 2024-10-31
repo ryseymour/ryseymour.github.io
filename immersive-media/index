@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Immersive Media Design</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Immersive Media Design</h1>
+    </header>
+    <section>
+        <h2>Sunlight on the National Mall</h2>
+        <p>A 360-degree VR experience showing the Sun’s path across the National Mall. Built with Unity and compatible with Google Cardboard for VR viewing.</p>
+    </section>
+    <section>
+        <h2>Glider Guide</h2>
+        <p>A flight simulator for educational exploration of land and water formations. Uses real-world height maps and features a mini-map.</p>
+    </section>
+</body>
+</html>
