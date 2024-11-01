@@ -2,42 +2,46 @@
 <html lang="en">
 <head>
     <title>Immersive Media Design</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
-
 </head>
 <body>
-    <header>
-        <header class="header">
-            <div class="container clearfix">
-                <img class="profile-image img-fluid float-left" src="../assets/images/profile.png" alt="Ryan Seymour">
-                <div class="profile-content float-left">
-                    <h1 class="name">Immersive Media Design</h1>
-                    <h2 class="desc">Interactive Software Designer</h2>
-                    <ul class="social list-inline">
-                        <li class="list-inline-item"><a href="https://linkedin.com/in/ryan-seymour"><i class="fab fa-linkedin-in"></i></a></li>
-                    </ul>
-                </div>
-                <nav class="float-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="index.html">Home</a></li>
-                        <li class="list-inline-item"><a href="immersive-media/">Immersive Media Design</a></li>
-                        <li class="list-inline-item"><a href="educational-game.html">Educational Game Design</a></li>
-                    </ul>
-                </nav>
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left" src="../assets/images/profile.png" alt="Ryan Seymour">
+            <div class="profile-content float-left">
+                <h1 class="name">Immersive Media Design</h1>
+                <h2 class="desc">Interactive Software Designer</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://linkedin.com/in/ryan-seymour"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
             </div>
-        </header>
+            <nav class="float-right">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="index.html">Home</a></li>
+                    <li class="list-inline-item"><a href="immersive-media/">Immersive Media Design</a></li>
+                    <li class="list-inline-item"><a href="educational-game.html">Educational Game Design</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section>
-        <h2>Sunlight on the National Mall</h2>
-        <p>A 360-degree VR experience showing the Sun’s path across the National Mall. Built with Unity and compatible with Google Cardboard for VR viewing.</p>
-    </section>
-    <section>
-        <h2>Glider Guide</h2>
-        <p>A flight simulator for educational exploration of land and water formations. Uses real-world height maps and features a mini-map.</p>
-    </section>
+
+    <div class="container">
+        <!-- Project 1: Sunlight on the National Mall -->
+        <section class="project">
+            <h2>Sunlight on the National Mall</h2>
+            <img src="../assets/images/immersive-media/sunlight-mall.jpg" alt="Sunlight on the National Mall" class="img-fluid">
+            <p>A 360-degree VR experience showing the Sun’s path across the National Mall. Built with Unity and compatible with Google Cardboard for VR viewing.</p>
+        </section>
+
+        <!-- Project 2: Glider Guide -->
+        <section class="project">
+            <h2>Glider Guide</h2>
+            <img src="../assets/images/immersive-media/glider-guide.jpg" alt="Glider Guide" class="img-fluid">
+            <p>A flight simulator for educational exploration of land and water formations. Uses real-world height maps and features a mini-map.</p>
+        </section>
+    </div>
 </body>
 </html>
