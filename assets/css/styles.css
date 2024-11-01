@@ -433,7 +433,7 @@ a.dotted-link:hover {
 
 
 .project figcaption {
-  text-align: left;
+  text-align: block;
   margin-top: 10px;
   font-size: 0.9em;
   color: #666;
