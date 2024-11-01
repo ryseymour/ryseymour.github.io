@@ -412,6 +412,27 @@ a.dotted-link:hover {
   margin-bottom: 0;
 }
 
+/* Optimize image container for better layout control */
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Add lazy-loading effect for images */
+.project img.lazyload {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.project img.lazyload.loaded {
+  opacity: 1;
+}
+
+
+
+
 /* Skills Section */
 .skills .intro {
   margin-bottom: 30px;
