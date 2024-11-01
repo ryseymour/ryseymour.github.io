@@ -420,14 +420,7 @@ a.dotted-link:hover {
   margin: 0 auto;
 }
 
-.project img.lazyload {
-  opacity: 0;
-  transition: opacity 0.3s ease-in;
-}
 
-.project img.lazyload.loaded {
-  opacity: 1; /* Show the image once loaded */
-}
 
 
 
