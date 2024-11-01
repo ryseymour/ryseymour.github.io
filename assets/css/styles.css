@@ -758,3 +758,12 @@ a.dotted-link:hover {
     max-width: inherit;
   }
 }
+
+@media (max-width: 767px) {
+  .project-wrapper {
+      flex-direction: column;
+  }
+  .project-wrapper .project-content {
+      padding-left: 0;
+  }
+}
