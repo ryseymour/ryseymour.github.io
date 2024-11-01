@@ -420,6 +420,16 @@ a.dotted-link:hover {
   margin: 0 auto;
 }
 
+/* Ensures the content below the image and caption in the Park Planner section */
+.project figure {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.project-content {
+  margin-top: 10px; /* Adds space between the caption and the text */
+}
+
 
 /* Button Styling */
 .btn-cta-primary {
