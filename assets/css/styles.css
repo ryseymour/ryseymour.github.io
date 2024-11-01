@@ -433,10 +433,11 @@ a.dotted-link:hover {
 
 
 .project figcaption {
-  text-align: relative;
+  text-align: left; /* Left-aligns the caption */
   margin-top: 10px;
   font-size: 0.9em;
   color: #666;
+  margin-left: 0; /* Ensure no left margin is applied */
 }
 
 /* Ensures the content below the image and caption in the Park Planner section */
