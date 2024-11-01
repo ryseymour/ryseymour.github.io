@@ -421,6 +421,54 @@ a.dotted-link:hover {
 }
 
 
+/* Button Styling */
+.btn-cta-primary {
+  background-color: #54ba4e;
+  border: 1px solid #54ba4e;
+  color: #fff;
+  padding: 12px 24px; /* Increase padding for better appearance */
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 15px; /* Space between button and text above */
+  margin-right: 10px; /* Space between buttons if there are multiple */
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta-primary:hover {
+  background-color: #49ac43;
+  border-color: #49ac43;
+  color: #fff;
+}
+
+/* Project Section Spacing */
+.project {
+  margin-bottom: 40px; /* Add space between project sections */
+}
+
+.project h2, .project h3 {
+  margin-top: 0;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* Left Align the First Image */
+.project:first-of-type img {
+  width: 50%; /* Keep it smaller, as you mentioned */
+  float: left; /* Align it to the left */
+  margin-right: 20px; /* Add space between image and text */
+  margin-bottom: 15px;
+}
+
+/* General Container Spacing */
+.container {
+  padding: 20px 0; /* Add top and bottom padding */
+}
 
 
 
