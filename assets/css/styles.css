@@ -59,6 +59,12 @@ a:focus {
   color: #fff;
 }
 
+.btn-cta-primary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+}
+
 a.btn-cta-primary, .btn-cta-primary {
   background: #54ba4e;
   border: 1px solid #54ba4e;
@@ -420,10 +426,23 @@ a.dotted-link:hover {
   margin: 0 auto;
 }
 
+.project-content {
+  margin-top: 20px; /* Space between the caption and the text */
+  clear: both;
+}
+
+
+.project figcaption {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
 /* Ensures the content below the image and caption in the Park Planner section */
 .project figure {
-  display: block;
-  margin-bottom: 15px;
+  margin: 0;
+  text-align: center;
 }
 
 .project-content {
@@ -453,7 +472,7 @@ a.dotted-link:hover {
 
 /* Project Section Spacing */
 .project {
-  margin-bottom: 40px; /* Add space between project sections */
+  margin-bottom: 40px; /* Space between project sections */
 }
 
 .project h2, .project h3 {
