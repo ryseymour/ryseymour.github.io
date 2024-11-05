@@ -516,6 +516,13 @@ a.dotted-link:hover {
   text-align: center; /* Center-align the caption below the image */
 }
 
+.project-figure .caption {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-top: 5px;
+  text-align: center;
+}
+
 
 .project-figure img {
   max-width: 100%;
