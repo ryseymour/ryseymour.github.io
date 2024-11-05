@@ -511,6 +511,14 @@ a.dotted-link:hover {
   display: block;
 }
 
+.project-caption {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-top: 5px;
+  text-align: center;
+  display: block;
+}
+
 .project-figure img {
   max-width: 100%;
   height: auto;
