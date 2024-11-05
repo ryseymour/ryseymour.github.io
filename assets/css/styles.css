@@ -497,7 +497,6 @@ a.dotted-link:hover {
 }
 
 .project-figure {
-  display: block;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -527,6 +526,7 @@ a.dotted-link:hover {
 .project-figure img {
   max-width: 100%;
   height: auto;
+  display: block;
   margin: 0 auto;
 }
 
