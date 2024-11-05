@@ -498,22 +498,24 @@ a.dotted-link:hover {
 }
 
 .project-figure {
-  text-align: center; /* Center-aligns the entire figure */
-  margin-bottom: 20px; /* Adds spacing below each project */
+  display: block;
+  text-align: center; /* Center the entire figure */
+  margin-bottom: 20px;
 }
 
 .project-figure figcaption {
   font-size: 0.9em;
   color: #6c757d;
   margin-top: 5px;
-  text-align: left;
+  text-align: center; /* Center-align the caption */
+  display: block;
 }
 
 .project-figure img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Centers the image */
+  margin: 0 auto; /* Center the image */
 }
 
 .caption {
