@@ -500,7 +500,7 @@ a.dotted-link:hover {
 .project-figure {
   display: block;
   text-align: center; /* Center the entire figure */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /*test*/
 }
 
 .project-figure figcaption {
