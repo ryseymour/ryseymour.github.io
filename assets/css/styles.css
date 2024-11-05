@@ -499,20 +499,20 @@ a.dotted-link:hover {
 
 .project-figure {
   text-align: left;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
-.project figcaption {
+.project-figure figcaption {
   font-size: 0.9em;
   color: #6c757d;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: left;
 }
 
 .project-figure img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin-bottom: 10px;
 }
 
 /* Flexbox layout for project wrapper */
