@@ -468,8 +468,7 @@ a.dotted-link:hover {
 
 /* Project Section Spacing */
 .project {
-  display: flex;
-  flex-direction: column;
+  display: block;
   margin-bottom: 40px;
 }
 
@@ -498,9 +497,8 @@ a.dotted-link:hover {
 }
 
 .project-figure {
-  display: block;
-  text-align: center; /* Center the entire figure */
-  margin-bottom: 20px; /*test*/
+  text-align: center; /* Center the figure */
+  margin-bottom: 20px; /* Add spacing below the figure */
 }
 
 .project-figure figcaption {
@@ -515,9 +513,9 @@ a.dotted-link:hover {
   font-size: 0.9em;
   color: #6c757d;
   margin-top: 5px;
-  text-align: center;
-  display: block;
+  text-align: center; /* Center-align the caption below the image */
 }
+
 
 .project-figure img {
   max-width: 100%;
@@ -808,17 +806,18 @@ a.dotted-link:hover {
 
 @media (min-width: 768px) {
   .project {
-      flex-direction: row;
+      display: flex;
       align-items: flex-start;
   }
-  
+
   .project-figure {
       flex: 0 0 45%;
       margin-right: 20px;
   }
-  
+
   .project-content {
       flex: 1;
+      max-width: 55%;
   }
 }
 
