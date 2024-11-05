@@ -498,8 +498,8 @@ a.dotted-link:hover {
 }
 
 .project-figure {
-  text-align: left;
-  margin-bottom: 10px;
+  text-align: center; /* Center-aligns the entire figure */
+  margin-bottom: 20px; /* Adds spacing below each project */
 }
 
 .project-figure figcaption {
@@ -513,6 +513,14 @@ a.dotted-link:hover {
   max-width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+.caption {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-top: 5px;
+  text-align: left; /* Ensures the caption is aligned to the left */
 }
 
 /* Flexbox layout for project wrapper */
