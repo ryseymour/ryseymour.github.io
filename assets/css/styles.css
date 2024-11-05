@@ -426,10 +426,6 @@ a.dotted-link:hover {
   margin: 0 auto;
 }
 
-.project-content {
-  margin-top: 20px; /* Space between the caption and the text */
-  clear: both;
-}
 
 
 .project figcaption {
@@ -446,9 +442,8 @@ a.dotted-link:hover {
 }
 
 .project-content {
-  flex: 1 1 0;
   text-align: left;
-  max-width: 55%; /* Ensure content fits beside the image */
+  max-width: 100%;
 }
 
 
@@ -473,9 +468,14 @@ a.dotted-link:hover {
 
 /* Project Section Spacing */
 .project {
-  margin-bottom: 40px;
   display: flex;
-  align-items: flex-start; /* Aligns content to the top */
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .project h2, .project h3 {
@@ -497,9 +497,22 @@ a.dotted-link:hover {
   margin-bottom: 15px;
 }
 
-.project figure {
+.project-figure {
+  text-align: left;
   margin: 0;
-  flex: 0 0 auto; /* Keeps image size consistent */
+}
+
+.project figcaption {
+  font-size: 0.9em;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.project-figure img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
 }
 
 /* Flexbox layout for project wrapper */
@@ -535,9 +548,8 @@ a.dotted-link:hover {
 
 /* General Container Spacing */
 .container {
-  padding: 20px 0; /* Add top and bottom padding */
+  padding: 20px 0;
 }
-
 
 
 
@@ -768,31 +780,27 @@ a.dotted-link:hover {
   color: #fb866a;
 }
 
-@media (max-width: 767.98px) {
-  .header {
-    text-align: center;
-  }
-  .header .profile-image {
-    float: none !important;
-    margin: 0 auto;
-  }
-  .header .profile-content {
-    float: none !important;
-    text-align: center;
-  }
-  .header .btn {
-    margin-top: 30px;
-    float: none !important;
-  }
-  .project-image {
-    margin-bottom: 15px;
-  }
-}
 
 @media (min-width: 1400px) {
   .container {
     width: 1360px;
     max-width: inherit;
+  }
+}
+
+@media (min-width: 768px) {
+  .project {
+      flex-direction: row;
+      align-items: flex-start;
+  }
+  
+  .project-figure {
+      flex: 0 0 45%;
+      margin-right: 20px;
+  }
+  
+  .project-content {
+      flex: 1;
   }
 }
 
