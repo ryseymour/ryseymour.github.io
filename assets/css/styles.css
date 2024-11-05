@@ -433,11 +433,10 @@ a.dotted-link:hover {
 
 
 .project figcaption {
-  text-align: left; /* Left-aligns the caption */
-  margin-top: 10px;
   font-size: 0.9em;
-  color: #666;
-  margin-left: 0; /* Ensure no left margin is applied */
+  color: #6c757d;
+  margin-top: 5px;
+  text-align: left;
 }
 
 /* Ensures the content below the image and caption in the Park Planner section */
@@ -447,8 +446,11 @@ a.dotted-link:hover {
 }
 
 .project-content {
-  margin-top: 10px; /* Adds space between the caption and the text */
+  flex: 1 1 0;
+  text-align: left;
+  max-width: 55%; /* Ensure content fits beside the image */
 }
+
 
 
 /* Button Styling */
@@ -456,24 +458,24 @@ a.dotted-link:hover {
   background-color: #54ba4e;
   border: 1px solid #54ba4e;
   color: #fff;
-  padding: 12px 24px; /* Increase padding for better appearance */
+  padding: 10px 20px;
   font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 15px; /* Space between button and text above */
-  margin-right: 10px; /* Space between buttons if there are multiple */
+  margin-top: 15px;
   transition: background-color 0.3s ease;
 }
 
 .btn-cta-primary:hover {
   background-color: #49ac43;
   border-color: #49ac43;
-  color: #fff;
 }
 
 /* Project Section Spacing */
 .project {
-  margin-bottom: 40px; /* Space between project sections */
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start; /* Aligns content to the top */
 }
 
 .project h2, .project h3 {
@@ -481,10 +483,10 @@ a.dotted-link:hover {
 }
 
 .project img {
-  max-width: 100%;
+  max-width: 45%; /* Adjust size as needed */
   height: auto;
   display: block;
-  margin-bottom: 15px;
+  margin-right: 20px; /* Space between image and text */
 }
 
 /* Left Align the First Image */
@@ -493,6 +495,11 @@ a.dotted-link:hover {
   float: left; /* Align it to the left */
   margin-right: 20px; /* Add space between image and text */
   margin-bottom: 15px;
+}
+
+.project figure {
+  margin: 0;
+  flex: 0 0 auto; /* Keeps image size consistent */
 }
 
 /* Flexbox layout for project wrapper */
