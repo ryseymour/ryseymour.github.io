@@ -835,3 +835,61 @@ a.dotted-link:hover {
       padding-left: 0;
   }
 }
+
+/* ---- Header nav as minimalist buttons ---- */
+.header nav ul {
+  margin-bottom: 0;
+}
+
+.header nav .list-inline-item {
+  margin-right: 4px;
+}
+
+.header nav .list-inline-item:last-child {
+  margin-right: 0;
+}
+
+.header nav a {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid #dfe3e7;
+  border-radius: 3px;
+  background: transparent;
+  color: #5f6b77;
+  font-size: 14px;
+  line-height: 1.45;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header nav a:hover,
+.header nav a:focus {
+  border-color: #3AAA64;
+  background: #fff;
+  color: #3AAA64;
+  text-decoration: none;
+}
+
+.header nav a.active {
+  border-color: #3AAA64;
+  background: #3AAA64;
+  color: #fff;
+}
+
+.header nav a.active:hover {
+  border-color: #2d844e;
+  background: #2d844e;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .header nav {
+    float: none !important;
+    margin-top: 15px;
+  }
+  .header nav .list-inline-item {
+    margin-bottom: 6px;
+  }
+}
