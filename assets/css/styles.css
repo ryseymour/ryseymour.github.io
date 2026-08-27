@@ -893,3 +893,15 @@ a.dotted-link:hover {
     margin-bottom: 6px;
   }
 }
+
+/* ---- Footer credit line ---- */
+.footer .copyright.credit {
+  display: block;
+  margin-top: 3px;
+  font-size: 12px;
+  color: #7d8791;
+}
+
+.footer .copyright.credit a {
+  color: #a1aab4;
+}
